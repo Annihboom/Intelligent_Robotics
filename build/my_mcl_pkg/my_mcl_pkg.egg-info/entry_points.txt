@@ -1,0 +1,9 @@
+[console_scripts]
+gt_tf = my_mcl_pkg.gt_tf_publisher:main
+safe_stop = my_mcl_pkg.safe_stop:main
+safe_stop_cmd = my_mcl_pkg.safe_stop_cmd:main
+test_map = my_mcl_pkg.test_map:main
+test_mcl = my_mcl_pkg.test_mcl:main
+test_odom = my_mcl_pkg.test_odom:main
+test_scan = my_mcl_pkg.test_scan:main
+

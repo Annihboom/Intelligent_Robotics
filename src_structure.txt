@@ -1,0 +1,237 @@
+.
+├── bcr_bot
+│   ├── CHANGELOG.rst
+│   ├── CMakeLists.txt
+│   ├── config
+│   │   ├── bcr_map.pgm
+│   │   ├── bcr_map.yaml
+│   │   ├── mapper_params_online_async.yaml
+│   │   └── nav2_params.yaml
+│   ├── launch
+│   │   ├── bcr_bot_gazebo_spawn.launch.py
+│   │   ├── bcr_bot_gz_spawn.launch.py
+│   │   ├── bcr_bot_ign_spawn.launch.py
+│   │   ├── gazebo.launch.py
+│   │   ├── gz.launch.py
+│   │   ├── ign.launch.py
+│   │   ├── mapping.launch.py
+│   │   ├── nav2.launch.py
+│   │   └── rviz.launch.py
+│   ├── LICENSE
+│   ├── meshes
+│   │   ├── bcr_bot_mesh.dae
+│   │   ├── kinect
+│   │   │   ├── d415.dae
+│   │   │   ├── kinect.dae
+│   │   │   ├── kinect.jpg
+│   │   │   └── kinect.tga
+│   │   ├── logo.png
+│   │   └── realsense_texture.png
+│   ├── models
+│   │   ├── aws_robomaker_warehouse_Bucket_01
+│   │   │   ├── materials
+│   │   │   │   └── textures
+│   │   │   │       └── aws_robomaker_warehouse_Bucket_01.png
+│   │   │   ├── meshes
+│   │   │   │   ├── aws_robomaker_warehouse_Bucket_01_collision.DAE
+│   │   │   │   └── aws_robomaker_warehouse_Bucket_01_visual.DAE
+│   │   │   ├── model.config
+│   │   │   └── model.sdf
+│   │   ├── aws_robomaker_warehouse_ClutteringA_01
+│   │   │   ├── materials
+│   │   │   │   └── textures
+│   │   │   │       ├── aws_robomaker_warehouse_ClutteringA_01.png
+│   │   │   │       ├── aws_robomaker_warehouse_ClutteringA_02.png
+│   │   │   │       └── aws_robomaker_warehouse_ClutteringA_03.png
+│   │   │   ├── meshes
+│   │   │   │   ├── aws_robomaker_warehouse_ClutteringA_01_collision.DAE
+│   │   │   │   └── aws_robomaker_warehouse_ClutteringA_01_visual.DAE
+│   │   │   ├── model.config
+│   │   │   └── model.sdf
+│   │   ├── aws_robomaker_warehouse_ClutteringC_01
+│   │   │   ├── materials
+│   │   │   │   └── textures
+│   │   │   │       ├── aws_robomaker_warehouse_ClutteringC_01.png
+│   │   │   │       └── aws_robomaker_warehouse_ClutteringC_02.png
+│   │   │   ├── meshes
+│   │   │   │   ├── aws_robomaker_warehouse_ClutteringC_01_collision.DAE
+│   │   │   │   └── aws_robomaker_warehouse_ClutteringC_01_visual.DAE
+│   │   │   ├── model.config
+│   │   │   └── model.sdf
+│   │   ├── aws_robomaker_warehouse_ClutteringD_01
+│   │   │   ├── materials
+│   │   │   │   └── textures
+│   │   │   │       ├── aws_robomaker_warehouse_ClutteringD_01.png
+│   │   │   │       └── aws_robomaker_warehouse_ClutteringD_02.png
+│   │   │   ├── meshes
+│   │   │   │   ├── aws_robomaker_warehouse_ClutteringD_01_collision.DAE
+│   │   │   │   └── aws_robomaker_warehouse_ClutteringD_01_visual.DAE
+│   │   │   ├── model.config
+│   │   │   └── model.sdf
+│   │   ├── aws_robomaker_warehouse_DeskC_01
+│   │   │   ├── materials
+│   │   │   │   └── textures
+│   │   │   │       ├── aws_robomaker_warehouse_DeskC_01.png
+│   │   │   │       ├── aws_robomaker_warehouse_DeskC_02.png
+│   │   │   │       ├── aws_robomaker_warehouse_DeskC_03.png
+│   │   │   │       ├── aws_robomaker_warehouse_DeskC_03.psd
+│   │   │   │       └── aws_robomaker_warehouse_DeskC_04.png
+│   │   │   ├── meshes
+│   │   │   │   ├── aws_robomaker_warehouse_DeskC_01_collision.DAE
+│   │   │   │   └── aws_robomaker_warehouse_DeskC_01_visual.DAE
+│   │   │   ├── model.config
+│   │   │   └── model.sdf
+│   │   ├── aws_robomaker_warehouse_GroundB_01
+│   │   │   ├── materials
+│   │   │   │   └── textures
+│   │   │   │       ├── aws_robomaker_warehouse_GroundB_01.png
+│   │   │   │       └── aws_robomaker_warehouse_GroundB_02.png
+│   │   │   ├── meshes
+│   │   │   │   ├── aws_robomaker_warehouse_GroundB_01_collision.DAE
+│   │   │   │   └── aws_robomaker_warehouse_GroundB_01_visual.DAE
+│   │   │   ├── model.config
+│   │   │   └── model.sdf
+│   │   ├── aws_robomaker_warehouse_Lamp_01
+│   │   │   ├── materials
+│   │   │   │   └── textures
+│   │   │   │       └── aws_robomaker_warehouse_Lamp_01.png
+│   │   │   ├── meshes
+│   │   │   │   ├── aws_robomaker_warehouse_Lamp_01_collision.DAE
+│   │   │   │   └── aws_robomaker_warehouse_Lamp_01_visual.DAE
+│   │   │   ├── model.config
+│   │   │   └── model.sdf
+│   │   ├── aws_robomaker_warehouse_PalletJackB_01
+│   │   │   ├── materials
+│   │   │   │   └── textures
+│   │   │   │       ├── aws_robomaker_warehouse_PalletJackB_01.png
+│   │   │   │       └── aws_robomaker_warehouse_PalletJackB_02.png
+│   │   │   ├── meshes
+│   │   │   │   ├── aws_robomaker_warehouse_PalletJackB_01_collision.DAE
+│   │   │   │   └── aws_robomaker_warehouse_PalletJackB_01_visual.DAE
+│   │   │   ├── model.config
+│   │   │   └── model.sdf
+│   │   ├── aws_robomaker_warehouse_RoofB_01
+│   │   │   ├── materials
+│   │   │   │   └── textures
+│   │   │   │       └── aws_robomaker_warehouse_RoofB_01.png
+│   │   │   ├── meshes
+│   │   │   │   ├── aws_robomaker_warehouse_RoofB_01_collision.DAE
+│   │   │   │   └── aws_robomaker_warehouse_RoofB_01_visual.DAE
+│   │   │   ├── model.config
+│   │   │   └── model.sdf
+│   │   ├── aws_robomaker_warehouse_ShelfD_01
+│   │   │   ├── materials
+│   │   │   │   └── textures
+│   │   │   │       ├── aws_robomaker_warehouse_ShelfD_01.png
+│   │   │   │       ├── aws_robomaker_warehouse_ShelfD_02.png
+│   │   │   │       ├── aws_robomaker_warehouse_ShelfD_03.png
+│   │   │   │       └── aws_robomaker_warehouse_ShelfD_04.png
+│   │   │   ├── meshes
+│   │   │   │   ├── aws_robomaker_warehouse_ShelfD_01_collision.DAE
+│   │   │   │   └── aws_robomaker_warehouse_ShelfD_01_visual.DAE
+│   │   │   ├── model.config
+│   │   │   └── model.sdf
+│   │   ├── aws_robomaker_warehouse_ShelfE_01
+│   │   │   ├── materials
+│   │   │   │   └── textures
+│   │   │   │       ├── aws_robomaker_warehouse_ShelfE_01.png
+│   │   │   │       ├── aws_robomaker_warehouse_ShelfE_02.png
+│   │   │   │       ├── aws_robomaker_warehouse_ShelfE_03.png
+│   │   │   │       └── aws_robomaker_warehouse_ShelfE_04.png
+│   │   │   ├── meshes
+│   │   │   │   ├── aws_robomaker_warehouse_ShelfE_01_collision.DAE
+│   │   │   │   └── aws_robomaker_warehouse_ShelfE_01_visual.DAE
+│   │   │   ├── model.config
+│   │   │   └── model.sdf
+│   │   ├── aws_robomaker_warehouse_ShelfF_01
+│   │   │   ├── materials
+│   │   │   │   └── textures
+│   │   │   │       ├── aws_robomaker_warehouse_ShelfF_01.png
+│   │   │   │       ├── aws_robomaker_warehouse_ShelfF_02.png
+│   │   │   │       └── aws_robomaker_warehouse_ShelfF_03.png
+│   │   │   ├── meshes
+│   │   │   │   ├── aws_robomaker_warehouse_ShelfF_01_collision.DAE
+│   │   │   │   └── aws_robomaker_warehouse_ShelfF_01_visual.DAE
+│   │   │   ├── model.config
+│   │   │   └── model.sdf
+│   │   ├── aws_robomaker_warehouse_TrashCanC_01
+│   │   │   ├── materials
+│   │   │   │   └── textures
+│   │   │   │       └── aws_robomaker_warehouse_TrashCanC_01.png
+│   │   │   ├── meshes
+│   │   │   │   ├── aws_robomaker_warehouse_TrashCanC_01_collision.DAE
+│   │   │   │   └── aws_robomaker_warehouse_TrashCanC_01_visual.DAE
+│   │   │   ├── model.config
+│   │   │   └── model.sdf
+│   │   └── aws_robomaker_warehouse_WallB_01
+│   │       ├── materials
+│   │       │   └── textures
+│   │       │       └── aws_robomaker_warehouse_WallB_01.png
+│   │       ├── meshes
+│   │       │   ├── aws_robomaker_warehouse_WallB_01_collision.DAE
+│   │       │   └── aws_robomaker_warehouse_WallB_01_visual.DAE
+│   │       ├── model.config
+│   │       └── model.sdf
+│   ├── package.xml
+│   ├── res
+│   │   ├── gz.jpg
+│   │   ├── isaac.jpg
+│   │   └── rviz.jpg
+│   ├── rviz
+│   │   ├── entire_setup.rviz
+│   │   └── map.rviz
+│   ├── scripts
+│   │   └── remapper.py
+│   ├── urdf
+│   │   ├── bcr_bot.xacro
+│   │   ├── gazebo.xacro
+│   │   ├── gz.xacro
+│   │   ├── ign.xacro
+│   │   ├── macros.xacro
+│   │   └── materials.xacro
+│   ├── usd
+│   │   ├── ActionGraphFull.usd
+│   │   ├── bcr_bot.usd
+│   │   ├── scene.usd
+│   │   └── warehouse_scene.usd
+│   └── worlds
+│       ├── empty.sdf
+│       ├── large_warehouse2.world
+│       ├── Large_warehouse.world
+│       └── small_warehouse.sdf
+├── my_mcl_pkg
+│   ├── config
+│   │   └── map_server.yaml
+│   ├── launch
+│   │   ├── mcl_node.launch.py
+│   │   ├── my_map_server.launch.py
+│   │   ├── safe_stop_cmd.launch.py
+│   │   ├── safe_stop.launch.py
+│   │   ├── test_map.launch.py
+│   │   ├── test_odom.launch.py
+│   │   └── test_scan.launch.py
+│   ├── map
+│   │   ├── bcr_map.pgm
+│   │   └── bcr_map.yaml
+│   ├── my_mcl_pkg
+│   │   ├── __init__.py
+│   │   ├── safe_stop_cmd.py
+│   │   ├── safe_stop.py
+│   │   ├── test_map.py
+│   │   ├── test_mcl.py
+│   │   ├── test_odom.py
+│   │   └── test_scan.py
+│   ├── package.xml
+│   ├── resource
+│   │   └── my_mcl_pkg
+│   ├── rviz
+│   │   └── final_rviz.rviz
+│   ├── setup.cfg
+│   ├── setup.py
+│   └── test
+│       ├── test_copyright.py
+│       ├── test_flake8.py
+│       └── test_pep257.py
+└── structure.txt
+
+76 directories, 158 files

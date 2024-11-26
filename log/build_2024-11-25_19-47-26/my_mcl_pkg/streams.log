@@ -1,0 +1,70 @@
+[0.380s] Invoking command in '/home/chjm/testbcrws/src/my_mcl_pkg': PYTHONPATH=/home/chjm/testbcrws/build/my_mcl_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_mcl_pkg build --build-base /home/chjm/testbcrws/build/my_mcl_pkg/build install --record /home/chjm/testbcrws/build/my_mcl_pkg/install.log --single-version-externally-managed install_data
+[0.521s] running egg_info
+[0.521s] creating ../../build/my_mcl_pkg/my_mcl_pkg.egg-info
+[0.521s] writing ../../build/my_mcl_pkg/my_mcl_pkg.egg-info/PKG-INFO
+[0.521s] writing dependency_links to ../../build/my_mcl_pkg/my_mcl_pkg.egg-info/dependency_links.txt
+[0.521s] writing entry points to ../../build/my_mcl_pkg/my_mcl_pkg.egg-info/entry_points.txt
+[0.521s] writing requirements to ../../build/my_mcl_pkg/my_mcl_pkg.egg-info/requires.txt
+[0.521s] writing top-level names to ../../build/my_mcl_pkg/my_mcl_pkg.egg-info/top_level.txt
+[0.521s] writing manifest file '../../build/my_mcl_pkg/my_mcl_pkg.egg-info/SOURCES.txt'
+[0.522s] reading manifest file '../../build/my_mcl_pkg/my_mcl_pkg.egg-info/SOURCES.txt'
+[0.523s] writing manifest file '../../build/my_mcl_pkg/my_mcl_pkg.egg-info/SOURCES.txt'
+[0.523s] running build
+[0.523s] running build_py
+[0.523s] creating /home/chjm/testbcrws/build/my_mcl_pkg/build
+[0.523s] creating /home/chjm/testbcrws/build/my_mcl_pkg/build/lib
+[0.523s] creating /home/chjm/testbcrws/build/my_mcl_pkg/build/lib/my_mcl_pkg
+[0.523s] copying my_mcl_pkg/test_mcl.py -> /home/chjm/testbcrws/build/my_mcl_pkg/build/lib/my_mcl_pkg
+[0.523s] copying my_mcl_pkg/test_map.py -> /home/chjm/testbcrws/build/my_mcl_pkg/build/lib/my_mcl_pkg
+[0.523s] copying my_mcl_pkg/safe_stop.py -> /home/chjm/testbcrws/build/my_mcl_pkg/build/lib/my_mcl_pkg
+[0.523s] copying my_mcl_pkg/__init__.py -> /home/chjm/testbcrws/build/my_mcl_pkg/build/lib/my_mcl_pkg
+[0.523s] copying my_mcl_pkg/test_odom.py -> /home/chjm/testbcrws/build/my_mcl_pkg/build/lib/my_mcl_pkg
+[0.523s] copying my_mcl_pkg/test_scan.py -> /home/chjm/testbcrws/build/my_mcl_pkg/build/lib/my_mcl_pkg
+[0.523s] running install
+[0.523s] running install_lib
+[0.524s] creating /home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages/my_mcl_pkg
+[0.524s] copying /home/chjm/testbcrws/build/my_mcl_pkg/build/lib/my_mcl_pkg/test_mcl.py -> /home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages/my_mcl_pkg
+[0.524s] copying /home/chjm/testbcrws/build/my_mcl_pkg/build/lib/my_mcl_pkg/test_map.py -> /home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages/my_mcl_pkg
+[0.524s] copying /home/chjm/testbcrws/build/my_mcl_pkg/build/lib/my_mcl_pkg/safe_stop.py -> /home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages/my_mcl_pkg
+[0.524s] copying /home/chjm/testbcrws/build/my_mcl_pkg/build/lib/my_mcl_pkg/__init__.py -> /home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages/my_mcl_pkg
+[0.524s] copying /home/chjm/testbcrws/build/my_mcl_pkg/build/lib/my_mcl_pkg/test_odom.py -> /home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages/my_mcl_pkg
+[0.524s] copying /home/chjm/testbcrws/build/my_mcl_pkg/build/lib/my_mcl_pkg/test_scan.py -> /home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages/my_mcl_pkg
+[0.524s] byte-compiling /home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages/my_mcl_pkg/test_mcl.py to test_mcl.cpython-310.pyc
+[0.527s] byte-compiling /home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages/my_mcl_pkg/test_map.py to test_map.cpython-310.pyc
+[0.528s] byte-compiling /home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages/my_mcl_pkg/safe_stop.py to safe_stop.cpython-310.pyc
+[0.528s] byte-compiling /home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages/my_mcl_pkg/__init__.py to __init__.cpython-310.pyc
+[0.528s] byte-compiling /home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages/my_mcl_pkg/test_odom.py to test_odom.cpython-310.pyc
+[0.528s] byte-compiling /home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages/my_mcl_pkg/test_scan.py to test_scan.cpython-310.pyc
+[0.529s] running install_data
+[0.529s] creating /home/chjm/testbcrws/install/my_mcl_pkg/share/ament_index
+[0.529s] creating /home/chjm/testbcrws/install/my_mcl_pkg/share/ament_index/resource_index
+[0.529s] creating /home/chjm/testbcrws/install/my_mcl_pkg/share/ament_index/resource_index/packages
+[0.529s] copying resource/my_mcl_pkg -> /home/chjm/testbcrws/install/my_mcl_pkg/share/ament_index/resource_index/packages
+[0.529s] copying package.xml -> /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg
+[0.529s] creating /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/launch
+[0.529s] copying launch/my_map_server.launch.py -> /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/launch
+[0.529s] copying launch/nav2_map.launch.py -> /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/launch
+[0.529s] copying launch/mcl_node.launch.py -> /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/launch
+[0.529s] copying launch/test_scan.launch.py -> /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/launch
+[0.529s] copying launch/test_map.launch.py -> /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/launch
+[0.530s] copying launch/test_odom.launch.py -> /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/launch
+[0.530s] copying launch/safe_stop.launch.py -> /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/launch
+[0.530s] creating /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/config
+[0.530s] copying config/nav2_params.yaml -> /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/config
+[0.530s] copying config/map_server.yaml -> /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/config
+[0.530s] creating /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/rviz
+[0.530s] copying rviz/final_rviz.rviz -> /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/rviz
+[0.530s] creating /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/map
+[0.530s] copying map/bcr_map.pgm -> /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/map
+[0.530s] copying map/bcr_map.yaml -> /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/map
+[0.530s] running install_egg_info
+[0.531s] Copying ../../build/my_mcl_pkg/my_mcl_pkg.egg-info to /home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages/my_mcl_pkg-0.0.1-py3.10.egg-info
+[0.531s] running install_scripts
+[0.544s] Installing gt_tf script to /home/chjm/testbcrws/install/my_mcl_pkg/lib/my_mcl_pkg
+[0.544s] Installing safe_stop script to /home/chjm/testbcrws/install/my_mcl_pkg/lib/my_mcl_pkg
+[0.544s] Installing test_map script to /home/chjm/testbcrws/install/my_mcl_pkg/lib/my_mcl_pkg
+[0.544s] Installing test_mcl script to /home/chjm/testbcrws/install/my_mcl_pkg/lib/my_mcl_pkg
+[0.544s] Installing test_odom script to /home/chjm/testbcrws/install/my_mcl_pkg/lib/my_mcl_pkg
+[0.544s] Installing test_scan script to /home/chjm/testbcrws/install/my_mcl_pkg/lib/my_mcl_pkg
+[0.544s] writing list of installed files to '/home/chjm/testbcrws/build/my_mcl_pkg/install.log'
+[0.558s] Invoked command in '/home/chjm/testbcrws/src/my_mcl_pkg' returned '0': PYTHONPATH=/home/chjm/testbcrws/build/my_mcl_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_mcl_pkg build --build-base /home/chjm/testbcrws/build/my_mcl_pkg/build install --record /home/chjm/testbcrws/build/my_mcl_pkg/install.log --single-version-externally-managed install_data

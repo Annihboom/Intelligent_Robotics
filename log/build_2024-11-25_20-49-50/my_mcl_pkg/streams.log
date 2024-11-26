@@ -1,0 +1,26 @@
+[0.454s] Invoking command in '/home/chjm/testbcrws/src/my_mcl_pkg': PYTHONPATH=/home/chjm/testbcrws/build/my_mcl_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_mcl_pkg build --build-base /home/chjm/testbcrws/build/my_mcl_pkg/build install --record /home/chjm/testbcrws/build/my_mcl_pkg/install.log --single-version-externally-managed install_data
+[0.624s] running egg_info
+[0.625s] writing ../../build/my_mcl_pkg/my_mcl_pkg.egg-info/PKG-INFO
+[0.625s] writing dependency_links to ../../build/my_mcl_pkg/my_mcl_pkg.egg-info/dependency_links.txt
+[0.625s] writing entry points to ../../build/my_mcl_pkg/my_mcl_pkg.egg-info/entry_points.txt
+[0.625s] writing requirements to ../../build/my_mcl_pkg/my_mcl_pkg.egg-info/requires.txt
+[0.625s] writing top-level names to ../../build/my_mcl_pkg/my_mcl_pkg.egg-info/top_level.txt
+[0.626s] reading manifest file '../../build/my_mcl_pkg/my_mcl_pkg.egg-info/SOURCES.txt'
+[0.627s] writing manifest file '../../build/my_mcl_pkg/my_mcl_pkg.egg-info/SOURCES.txt'
+[0.627s] running build
+[0.627s] running build_py
+[0.627s] running install
+[0.627s] running install_lib
+[0.628s] running install_data
+[0.628s] running install_egg_info
+[0.629s] removing '/home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages/my_mcl_pkg-0.0.1-py3.10.egg-info' (and everything under it)
+[0.629s] Copying ../../build/my_mcl_pkg/my_mcl_pkg.egg-info to /home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages/my_mcl_pkg-0.0.1-py3.10.egg-info
+[0.630s] running install_scripts
+[0.644s] Installing gt_tf script to /home/chjm/testbcrws/install/my_mcl_pkg/lib/my_mcl_pkg
+[0.644s] Installing safe_stop script to /home/chjm/testbcrws/install/my_mcl_pkg/lib/my_mcl_pkg
+[0.644s] Installing test_map script to /home/chjm/testbcrws/install/my_mcl_pkg/lib/my_mcl_pkg
+[0.644s] Installing test_mcl script to /home/chjm/testbcrws/install/my_mcl_pkg/lib/my_mcl_pkg
+[0.644s] Installing test_odom script to /home/chjm/testbcrws/install/my_mcl_pkg/lib/my_mcl_pkg
+[0.644s] Installing test_scan script to /home/chjm/testbcrws/install/my_mcl_pkg/lib/my_mcl_pkg
+[0.644s] writing list of installed files to '/home/chjm/testbcrws/build/my_mcl_pkg/install.log'
+[0.661s] Invoked command in '/home/chjm/testbcrws/src/my_mcl_pkg' returned '0': PYTHONPATH=/home/chjm/testbcrws/build/my_mcl_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chjm/testbcrws/install/my_mcl_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_mcl_pkg build --build-base /home/chjm/testbcrws/build/my_mcl_pkg/build install --record /home/chjm/testbcrws/build/my_mcl_pkg/install.log --single-version-externally-managed install_data

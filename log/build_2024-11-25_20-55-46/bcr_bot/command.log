@@ -1,0 +1,4 @@
+Invoking command in '/home/chjm/testbcrws/build/bcr_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chjm/testbcrws/install/my_mcl_pkg:/opt/ros/humble /usr/bin/cmake --build /home/chjm/testbcrws/build/bcr_bot -- -j24 -l24
+Invoked command in '/home/chjm/testbcrws/build/bcr_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chjm/testbcrws/install/my_mcl_pkg:/opt/ros/humble /usr/bin/cmake --build /home/chjm/testbcrws/build/bcr_bot -- -j24 -l24
+Invoking command in '/home/chjm/testbcrws/build/bcr_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chjm/testbcrws/install/my_mcl_pkg:/opt/ros/humble /usr/bin/cmake --install /home/chjm/testbcrws/build/bcr_bot
+Invoked command in '/home/chjm/testbcrws/build/bcr_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chjm/testbcrws/install/my_mcl_pkg:/opt/ros/humble /usr/bin/cmake --install /home/chjm/testbcrws/build/bcr_bot

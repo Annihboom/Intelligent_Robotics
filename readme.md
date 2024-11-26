@@ -29,10 +29,12 @@ In src_structure.txt
 - Resample if Neff value <50 
 
 **GIF Demonstrations:**
-- **MCL in Action:** ![MCL](my_mcl.gif)
+- **MCL in Action:**
+- ![MCL](my_mcl.gif)
 
 
-- **NAV2 Comparison:** ![NAV2](NAV2.gif)
+- **NAV2 Comparison:**
+- ![NAV2](NAV2.gif)
 
 ---
 
@@ -42,10 +44,12 @@ In src_structure.txt
 
 **GIF Demonstration:**
 Safe stop with teleop
-- **Safe Stop in Action:** ![Safe Stop](safestop1.gif)
+- **Safe Stop in Action:**
+- ![Safe Stop](safestop1.gif)
 
 Safe stop directly with /cmd_vel
-- **Safe Stop in Action:** ![Safe Stop](safestop2.gif)
+- **Safe Stop in Action:**
+- ![Safe Stop](safestop2.gif)
 
 ---
 

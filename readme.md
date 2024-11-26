@@ -4,7 +4,7 @@ This project enhances the open-source robot **bcr_bot** by implementing:
 1. A **safe stop** mechanism for preventing collisions.
 2. Reimplementation of **Monte Carlo Localization (MCL)** in **ROS2 Humble** using Python, based on the NAV2 server.
 
-bcr_bot link: https://github.com/blackcoffeerobotics/bcr_bot
+  (bcr_bot link: https://github.com/blackcoffeerobotics/bcr_bot)
 
 
 The project utilizes the following software and dependencies:

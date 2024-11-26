@@ -1,0 +1,15 @@
+map_server:
+  ros__parameters:
+    yaml_filename: "/home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/config/bcr_map.yaml"  # 绝对路径，指向你的 bcr_map.yaml 文件
+    frame_id: "map"                    
+    use_sim_time: true                 
+# map_server:
+#   ros__parameters:
+#     yaml_filename: "/home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/config/bcr_map.yaml"
+#     frame_id: "map"
+#     use_sim_time: true
+#     qos_overrides:
+#       /map:
+#         durability: transient_local
+#         reliability: reliable
+#         history: keep_all

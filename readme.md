@@ -1,5 +1,8 @@
 # MCL and Safe Stop with BCR Bot on ROS2 Humble
 
+This project is supervised by Professor Melanie Jouaiti. 
+I am very grateful for her kind support. 
+
 This project enhances the open-source robot **bcr_bot** by implementing:
 1. A **safe stop** mechanism for preventing collisions.
 2. Reimplementation of **Monte Carlo Localization (MCL)** in **ROS2 Humble** using Python, based on the NAV2 server.
@@ -14,12 +17,11 @@ The project utilizes the following software and dependencies:
 - **Rviz:** Rviz2
 
 ---
-
-
-
+Black Coffee Robot Github link:
+https://github.com/blackcoffeerobotics/bcr_bot
 
 ## **File Structure**
-In src_structure.txt
+In src/structure.txt
 
 ---
 

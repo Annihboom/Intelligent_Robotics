@@ -32,7 +32,7 @@ In src_structure.txt
 - **MCL in Action:** ![MCL](my_mcl.gif)
 
 
-- **NAV2 Comparison:** ![NAV2](nav2.gif)
+- **NAV2 Comparison:** ![NAV2](NAV2.gif)
 
 ---
 
@@ -42,10 +42,10 @@ In src_structure.txt
 
 **GIF Demonstration:**
 Safe stop with teleop
-- **Safe Stop in Action:** ![Safe Stop](safe_stop1.gif)
+- **Safe Stop in Action:** ![Safe Stop](safestop1.gif)
 
 Safe stop directly with /cmd_vel
-- **Safe Stop in Action:** ![Safe Stop](safe_stop2.gif)
+- **Safe Stop in Action:** ![Safe Stop](safestop2.gif)
 
 ---
 

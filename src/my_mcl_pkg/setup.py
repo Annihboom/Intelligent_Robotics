@@ -5,7 +5,7 @@ package_name = 'my_mcl_pkg'
 
 setup(
     name=package_name,
-    version='0.0.1',  # 确保版本号正确
+    version='0.0.1', 
     packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
@@ -19,16 +19,16 @@ setup(
         'setuptools',
         'numpy',
         'transforms3d',
-        'rclpy',         # ROS 2 Python客户端库
-        'sensor-msgs',   # 支持 LaserScan 消息
-        'std-msgs',      # 支持 Bool 消息
-        'geometry-msgs', # 支持 Twist 消息
+        'rclpy',         
+        'sensor-msgs',  
+        'std-msgs',      
+        'geometry-msgs', 
     ],
     zip_safe=True,
     maintainer='chjm',
-    maintainer_email='q2523062390@126.com',
+    maintainer_email='yxs152@student.bham.ac.uk',
     description='A Monte Carlo Localization package for ROS 2.',
-    license='BSD',  # 修改为实际许可证
+    license='BSD',  
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [

@@ -16,13 +16,11 @@
 /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/package.xml
 /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/launch/safe_stop_cmd.launch.py
 /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/launch/my_map_server.launch.py
-/home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/launch/nav2_map.launch.py
 /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/launch/mcl_node.launch.py
 /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/launch/test_scan.launch.py
 /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/launch/test_map.launch.py
 /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/launch/test_odom.launch.py
 /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/launch/safe_stop.launch.py
-/home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/config/nav2_params.yaml
 /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/config/map_server.yaml
 /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/rviz/final_rviz.rviz
 /home/chjm/testbcrws/install/my_mcl_pkg/share/my_mcl_pkg/map/bcr_map.pgm

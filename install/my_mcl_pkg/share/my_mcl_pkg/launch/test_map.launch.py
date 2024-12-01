@@ -9,6 +9,11 @@ from launch_ros.actions import Node
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
+
+"""
+Testing code for map 
+"""
+
 def generate_launch_description():
 
     pkg_mcl = get_package_share_directory('my_mcl_pkg')

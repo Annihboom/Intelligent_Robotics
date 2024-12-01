@@ -70,7 +70,7 @@ class MCLNode(Node):
         self.alpha3 = 0.05
         self.alpha4 = 0.05
         self.alpha5 = 0.05
-        self.num_particles= 150
+        self.num_particles= 200
         self.xmin=-16.0
         self.xmax=7.00
         self.ymin=-10.5
@@ -134,8 +134,10 @@ class MCLNode(Node):
             # Note: we initialize particles closer to the robot's initial
             # position in order to make the initialization easier
             self.get_logger().info("inside get random free state")
-            xrand = np.random.uniform(self.xmin*0.04, self.xmax*0.04)
-            yrand = np.random.uniform(self.ymin*0.04, self.ymax*0.04)
+            # xrand = np.random.uniform(self.xmin*0.04, self.xmax*0.04)
+            # yrand = np.random.uniform(self.ymin*0.04, self.ymax*0.04)
+            xrand = np.random.uniform(self.xmin*0.1, self.xmax*0.1)
+            yrand = np.random.uniform(self.ymin*0.1, self.ymax*0.1)
             row, col = self.metric_to_grid_coords(xrand, yrand)
 
             # debugging
@@ -144,7 +146,9 @@ class MCLNode(Node):
             
            
             if self.grid_bin[row, col]:
-                theta = np.random.uniform(0, 2*pi)
+                # theta = np.random.uniform(0, 2*pi)
+                theta = np.random.normal(0, pi / 12)  # pi/12 表示标准差 15°，可调整范围
+                theta = (theta + 2 * pi) % (2 * pi)  
                 return xrand, yrand, theta
 
     def init_particles(self):
@@ -155,7 +159,7 @@ class MCLNode(Node):
             xrand, yrand, theta = self.get_random_free_state()
             # Note: same orientation as the initial orientation of the robot
             # to make initialization easier
-            self.particles.append(Particle(i, xrand, yrand, 0))
+            self.particles.append(Particle(i, xrand, yrand, theta))
         self.get_logger().info(f"Initialized particle ")
     
   
@@ -192,7 +196,7 @@ class MCLNode(Node):
         N_eff = 1.0 / sum(w ** 2 for w in self.weights)
 
         # Step 4: Resample particles if necessary
-        if N_eff < 70:  # Resample only if N_eff falls below a threshold
+        if N_eff < 50:  # Resample only if N_eff falls below a threshold
             self.resample()
 
     def divide_up(self, id, particle, num, particle_list):
@@ -354,22 +358,49 @@ class MCLNode(Node):
         assert self.laser_min_range >= 0
         assert self.laser_max_range > 0
 
-        # Subsample the actual laser scan
+        total_error = 0.0
+        sigma_hit = 0.2  #    
         actual_ranges, angles = self.subsample_laser_scan(laser_scan_msg)
 
-        # Simulate a laser scan for the given particle
         predict_ranges = self.simulate_laser_scan_for_particle(
             particle.x, particle.y, particle.theta, angles, self.laser_min_range, self.laser_max_range
         )
 
-        # Compute the difference between predicted and actual ranges
-        diff = [actual_range - predict_range for actual_range, predict_range in zip(actual_ranges, predict_ranges)]
 
-        # Compute the squared norm of the difference
-        # self.get_logger().info(f"Norm error: {norm_error}")
-        norm_error = np.linalg.norm(diff)
-        #self.get_logger().info(f"Norm error: {norm_error}")
-        return norm_error**2
+        for actual_range, predict_range in zip(actual_ranges, predict_ranges):
+            if not np.isfinite(actual_range):  # Skip invalid readings
+                continue
+            
+            z = actual_range - predict_range
+            p_hit = math.exp(-(z ** 2) / (2 * sigma_hit ** 2))
+
+            # Penalize yaw mismatch by adding angular error
+            angular_error = abs(math.atan2(actual_range, predict_range) - particle.theta)
+            angular_penalty = math.exp(-(angular_error ** 2) / (2 * (sigma_hit ** 2)))
+
+            # Combine linear and angular penalties
+            p_combined = p_hit * angular_penalty
+
+            total_error += -math.log(max(p_combined, 1e-10))  # Avoid log(0)
+
+        return total_error
+
+        # # Subsample the actual laser scan
+        # actual_ranges, angles = self.subsample_laser_scan(laser_scan_msg)
+
+        # # Simulate a laser scan for the given particle
+        # predict_ranges = self.simulate_laser_scan_for_particle(
+        #     particle.x, particle.y, particle.theta, angles, self.laser_min_range, self.laser_max_range
+        # )
+
+        # # Compute the difference between predicted and actual ranges
+        # diff = [actual_range - predict_range for actual_range, predict_range in zip(actual_ranges, predict_ranges)]
+
+        # # Compute the squared norm of the difference
+        # # self.get_logger().info(f"Norm error: {norm_error}")
+        # norm_error = np.linalg.norm(diff)
+        # #self.get_logger().info(f"Norm error: {norm_error}")
+        # return norm_error**2
 
     # def predict_particle_odometry(self, particle):
     #     """

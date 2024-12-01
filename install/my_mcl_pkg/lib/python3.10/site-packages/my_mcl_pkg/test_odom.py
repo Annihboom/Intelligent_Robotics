@@ -11,7 +11,7 @@ class OdomTester(Node):
         # Subscribe to the /odom topic
         self.odom_subscription = self.create_subscription(
             Odometry,
-            'bcr_bot/odom',  # 替换为你的里程计话题（如 /bcr_bot/odom）
+            'bcr_bot/odom',  
             self.odom_callback,
             10  # QoS profile
         )

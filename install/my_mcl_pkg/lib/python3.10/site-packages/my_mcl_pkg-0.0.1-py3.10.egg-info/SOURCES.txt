@@ -9,10 +9,8 @@ setup.py
 ../../build/my_mcl_pkg/my_mcl_pkg.egg-info/top_level.txt
 ../../build/my_mcl_pkg/my_mcl_pkg.egg-info/zip-safe
 config/map_server.yaml
-config/nav2_params.yaml
 launch/mcl_node.launch.py
 launch/my_map_server.launch.py
-launch/nav2_map.launch.py
 launch/safe_stop.launch.py
 launch/safe_stop_cmd.launch.py
 launch/test_map.launch.py

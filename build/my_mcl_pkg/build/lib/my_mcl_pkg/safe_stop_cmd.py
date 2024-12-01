@@ -4,6 +4,19 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from sensor_msgs.msg import LaserScan
 
+
+"""
+This safe stop node publish fixed velocity on x axis 
+It stop as long as it detect obstacle in dangerous distance and give control back to /cmd_vel
+if obstacle disappear.
+
+Basically it is applied in navigation with dynamic obstacles such as human, other robots 
+and prevent hiting on them, 
+but it will not obstruct robot's movement
+
+"""
+
+
 class SafetyDetectorNode(Node):
     def __init__(self):
         super().__init__('safety_detector_node')

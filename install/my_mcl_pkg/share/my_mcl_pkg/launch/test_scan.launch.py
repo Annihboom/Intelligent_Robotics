@@ -2,6 +2,10 @@ import os
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
+"""
+Testing code for laser scan
+"""
+
 def generate_launch_description():
     return LaunchDescription([
         Node(

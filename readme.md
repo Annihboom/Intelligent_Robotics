@@ -86,9 +86,16 @@ First, close any previously running teleop sessions, then run:
 ```bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard cmd_vel:=/bcr_bot/teleop_cmd_vel
 ros2 launch my_mcl_pkg safe_stop.launch.py
+
+
+
 ```
 
 ### Launch Safe Stop Directly Controlling cmd_vel
 For direct control over the `cmd_vel`, launch the safe stop as follows:
 ```bash
 ros2 launch my_mcl_pkg safe_stop_cmd.launch.py
+
+
+
+This is a student project for Intelligent Robotics; Due to time issue, few shortcomings had not been addressed. One of this is the convergence of localization (You can observe through red arrows in demo).

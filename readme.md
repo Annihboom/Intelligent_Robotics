@@ -10,6 +10,9 @@ This project enhances the open-source robot **bcr_bot** by implementing:
   (bcr_bot link: https://github.com/blackcoffeerobotics/bcr_bot)
 
 
+
+This is a student project for Intelligent Robotics; Due to time issue, few shortcomings had not been addressed. One of this is the convergence of localization (You can observe through red arrows in demo).
+
 The project utilizes the following software and dependencies:
 - **Ubuntu Version:** 22.04
 - **ROS2 Distribution:** Humble
@@ -97,5 +100,3 @@ For direct control over the `cmd_vel`, launch the safe stop as follows:
 ros2 launch my_mcl_pkg safe_stop_cmd.launch.py
 
 
-
-This is a student project for Intelligent Robotics; Due to time issue, few shortcomings had not been addressed. One of this is the convergence of localization (You can observe through red arrows in demo).
